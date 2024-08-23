@@ -21,15 +21,23 @@ Dim2D<int> ConsoleHandle::GetSize(){
     throw NotImplementedException("LINUX_GetSize");
 }
 
+Dim2D<int> ConsoleHandle::GetCursorPosition(){
+    throw NotImplementedException("LINUX_GetCursorPosition");
+}
+
+void ConsoleHandle::ClearScreen(){
+    throw NotImplementedException("LINUX_ClearScreen");
+}
 #endif
 
+// --------------------------------------------------------------------------------
+
 #ifdef WINDOWS
-
-
 
 CONSOLE_SCREEN_BUFFER_INFO CH_GetCSBI(){
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     GetConsoleScreenBufferInfo(hConsoleOutput, &csbi);
+    return csbi;
 }
 
 Dim2D<int> ConsoleHandle::GetSize(){

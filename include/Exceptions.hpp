@@ -21,3 +21,8 @@ class FailedOperationException : public Exception {
     public:
     FailedOperationException(std::string msg) : Exception(msg, "FailedOperationException") {}
 };
+
+class IOException : public Exception {
+    public:
+    IOException(std::string msg) : Exception(msg, "IOException") {}
+};

@@ -3,6 +3,7 @@
 #include <chrono>
 
 #include "ConsoleHandle.hpp"
+#include "CommandRunner.hpp"
 
 int main(int argc, char const *argv[])
 {
@@ -17,7 +18,8 @@ int main(int argc, char const *argv[])
         std::cout << "Size: (" << size.X << ", " << size.Y << ")" << std::endl;
         auto pos = handle.GetCursorPosition();
         std::cout << "Pos: (" << pos.X << ", " << pos.Y << ")" << std::endl;
-         
+        
+
     }
     
     }
