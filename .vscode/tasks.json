@@ -3,13 +3,14 @@
         {
             "type": "cppbuild",
             "label": "cpptask",
-            "command": "C:\\ProgramFiles_Manual\\mingw64\\bin\\g++.exe",
+            "command": "g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}\\src\\*.c*",
                 "-o",
-                "${workspaceFolder}\\bin\\ASCII_Engine.exe"
+                "${workspaceFolder}\\bin\\ASCII_Engine.exe",
+                "-I${workspaceFolder}\\include\\"
             ],
             "options": {
                 "cwd": "${fileDirname}"
